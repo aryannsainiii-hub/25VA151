@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list</title>
+    <title>HTML List</title>
 </head>
 <body>
-    <h2>UNOREDERED LIST</h2>
-    <span>
-        <border=2px solid black></border>
-    <li>
-        <ul type="circle">
-           <li>product 0</li> 
-           <li>product 1 </li>
-           <li>
-            product 2 
-           </li>
-        </ul>
-</li>
+    <!--unordered list-->
+    <h2>Unordered List</h2>
+    <h3>List type: none, disc, circle, square</h3>
+    <ul type="square">
+        <li>item 01</li>
+        <li>item 02</li>
+        <li>item 03</li>
+        <li>item 04</li>
+    </ul>
 
-<h2>ordered list</h2>
-<ol>
-    <li>as</li>
-    <li>as</li>
-</ol>
-
- </span>   
- <h2>
-    description LIST
-
- </h2> 
- <dl>
-    <dt>
-        HTML
-    </dt>
-<dd>
-    hyper text markup language
-</dd>
- </dl> 
- <ol type="number">
-    <li>name</li>
-    <ol>
-        <li>aman</li>
-          <li>abhay</li>
-            <li>boom</li>
-            <li>nun</li>
+    <h2>Ordered List - type : <mark>1,A,a,i,I</mark></h2>
+    <ol type="a" start="5">
+        <li>item 01</li>
+        <li>item 02</li>
+        <li>item 03</li>
+        <li>item 04</li>
     </ol>
-    <li>contact</li>
-    <ol>
-        <li>5462126446</li>
-        <li>546644446</li>
-        <li>54221366446</li>
-        <li>541266446</li>
-        
-           
-        </ol>
-    </ol>
- </ol>
+<h2>Descrition List</h2>
+<dl>
+  <dt>HTML</dt>
+  <dd>Hyper Text Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheet</dd>
+</dl>
+<h2>Nested List</h2>
+<ul type="none">
  
- <abbr>igtrrfgfdg</abbr>
- <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea necessitatibus iure distinctio architecto maiores doloribus sapiente esse nihil quasi quod, repudiandae ducimus dolores laborum, tempore eos optio quaerat sequi.</blockquote>
+    <!--name list item-->
+    <li>Students Name
+        <ol type="i">
+            <li>Aman
+                <ul>
+                    <li>Aman Singh</li>
+                    <li>Aman Gupta</li>
+                </ul>
+            </li>
+            <li>Vikas</li>
+            <li>Abhay</li>
+            <li>Vinay</li>
+        </ol>
+    </li><!--name list item end-->
+    <!--branch list item-->
+    <li>Students Branch
+        <ol>
+            <li>CSE</li>
+            <li>ELCE</li>
+            <li>ME</li>
+            <li>AIML</li>
+        </ol>
+    </li>
+    
+    <!--branch list item end-->
+
+    <!--Mob list item -->
+    <li>Students Mob
+        <ol>
+            <li>8678567</li>
+            <li>897697769</li>
+            <li>45345435</li>
+            <li>9988887678</li>
+        </ol>
+    </li>
+    <!--mob list item close-->
+</ul>
+
 </body>
 </html>

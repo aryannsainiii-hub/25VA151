@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aryan — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b5cff;
+      --muted:#6b7280;
+      --bg:#f7f9fc;
+      --paper:#ffffff;
+      --radius:12px;
+      --max-width:900px;
+      --print-margin:20mm;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#0f172a;background:var(--bg)}
+    .container{max-width:var(--max-width);margin:28px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));border-radius:var(--radius);box-shadow:0 6px 24px rgba(13,42,66,0.08);}
+    .grid{display:grid;grid-template-columns:260px 1fr;gap:28px}
+    header{display:flex;align-items:center;gap:16px}
+    .photo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c4dff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
+    h1{margin:0;font-size:22px}
+    .title{color:var(--muted);font-weight:600;margin-top:6px}
+
+    /* Left column */
+    .left{padding:18px;background:var(--paper);border-radius:10px}
+    .section{margin-bottom:18px}
+    .muted{color:var(--muted);font-size:13px}
+    .contact-list{list-style:none;padding:0;margin:10px 0 0}
+    .contact-list li{display:flex;gap:8px;align-items:center;margin:8px 0;font-size:14px}
+    .skill{display:inline-block;padding:6px 8px;border-radius:8px;background:#f1f5f9;margin:6px 6px 0 0;font-size:13px}
+
+    /* Right column */
+    .right{padding:20px;background:var(--paper);border-radius:10px}
+    .subheading{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+    .role{color:var(--accent);font-weight:600}
+    .card{padding:12px;border-radius:8px;background:rgba(11,92,255,0.04);}
+    .job{margin-bottom:12px}
+    .job h3{margin:0;font-size:16px}
+    .job .meta{font-size:13px;color:var(--muted);margin-top:4px}
+    ul.bullets{margin:8px 0 0 18px}
+
+    /* Footer for prints */
+    @media print{
+      body{background:white}
+      .container{box-shadow:none;border-radius:0;margin:0;padding:0}
+      @page{size:A4;margin:var(--print-margin)}
+    }
+
+    /* Responsive */
+    @media (max-width:760px){
+      .grid{grid-template-columns:1fr;}
+      .left{order:2}
+      .right{order:1}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <!-- Left column -->
+      <aside class="left">
+        <header>
+          <div class="photo">AR</div>
+          <div>
+            <h1>ARYAN</h1>
+            <div class="title">B.Tech (Applied Physics) • 1st Year</div>
+          </div>
+        </header>
+
+        <div class="section">
+          <div class="muted">Contact</div>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>📞 +91 91234 56789</li>
+            <li>📍 City, State, India</li>
+            <li>🔗 <a href="#">linkedin.com/in/yourprofile</a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="muted">Skills</div>
+          <div style="margin-top:8px">
+            <span class="skill">C / C++</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Git</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="muted">Education</div>
+          <div style="margin-top:8px">
+            <strong>B.Tech — Applied Physics</strong>
+            <div class="muted" style="font-size:13px;margin-top:4px">Institute Name • 2025 — Present</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="muted">Languages</div>
+          <div style="margin-top:8px;font-size:14px">English (Professional), Hindi (Native)</div>
+        </div>
+      </aside>
+
+      <!-- Right column -->
+      <main class="right">
+        <div class="subheading">
+          <div>
+            <div class="role">Aspiring Software / Embedded Developer</div>
+            <div class="muted">Quick summary — motivated first-year B.Tech student with strong fundamentals in programming, problem solving, and physics. Looking for internship and project opportunities.</div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="muted">Projects</div>
+          <div class="job">
+            <h3>Simple Weather App (HTML/CSS/JS)</h3>
+            <div class="meta">Personal project • 2025</div>
+            <ul class="bullets">
+              <li>Built a responsive weather dashboard using public APIs to fetch current conditions.</li>
+              <li>Implemented local storage to save preferred locations and vanilla JS for DOM updates.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h3>DSA Practice & Competitive Programming</h3>
+            <div class="meta">Ongoing</div>
+            <ul class="bullets">
+              <li>Solving problems on platforms like CodeChef and LeetCode to improve algorithms and complexity analysis.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="muted">Experience & Extracurriculars</div>
+          <div class="job">
+            <h3>Teaching Assistant — Intro to Programming</h3>
+            <div class="meta">College Workshop • 2025</div>
+            <ul class="bullets">
+              <li>Helped classmates debug C/C++ assignments and explained core concepts in lab sessions.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h3>Volunteer — Science Club</h3>
+            <div class="meta">College Chapter • 2025</div>
+            <ul class="bullets">
+              <li>Organized small workshops and quiz sessions to encourage peer learning in physics and coding.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="muted">Certificates</div>
+          <div style="margin-top:8px">
+            • Problem Solving (Beginner) — CodeChef<br>
+            • Introduction to Python — Coursera
+          </div>
+        </section>
+
+        <section style="margin-top:18px;font-size:13px;color:var(--muted)">
+          <strong>Notes:</strong> Replace placeholder text (email, phone, institute, project details) with your real information. This file is single-file HTML/CSS — you can open it in any browser and print to PDF.
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
