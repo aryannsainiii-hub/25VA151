@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #C5C6C7;
+    background-color: #0B0C10;
+}
+
+
+nav {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(15, 15, 15, 0.95);
+    box-shadow: 0 0 10px #45A29E;
+    backdrop-filter: blur(10px);
+}
+
+nav .logo {
+    width: 60px;
+    height: 60px;
+    background: url("logo.jpg") no-repeat center center;
+    background-size: contain;
+    border-radius: 60%;
+    box-shadow: 0 0 18px #45A29E;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #16476A;
+    transition: font-size 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    background-color: #45A29E;
+    color: #0B0C10;
+    box-shadow: 0 0 15px #45A29E, 0 0 30px #66FCF1;
+    font-size: 1.1rem;
+
+}
+
+section {
+    padding: 60px;
+    margin: 40px 10px;
+    background-color: #1F2833;
+    border: 1px solid #45A29E;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #45A29E20 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #66FCF1;
+    background-color: #16202B;
+}
+
+
+footer {
+    background-color: #0B0C10;
+    color: #C5C6C7;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px;
+}
+
+h1,
+h2,
+h3 {
+    color: #66FCF1;
+    text-shadow: 0 0 5px #66FCF1, 0 0 10px #45A29E;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #C5C6C7;
+}
+</style>
+<body>
+    <nav>
+        <div class="logo"></div>
+
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#project">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>ARYAN SAINI</h1>
+        <h3>Student |Programmer| Web Developer</h3>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi — I’m <b>Aryan Saini</b>, a college student and <b>CSE fresher at ABES Engineering College</b> who’s a
+            passionate <b>coding enthusiast</b>.
+            I’m currently learning <b>Web Development</b> while strengthening my foundation in <b>Data Structures &
+                Algorithms (DSA)</b>.
+        </p>
+
+        <p>
+            I’ve worked with <b>Python</b>, <b>C</b>, and <b>C++</b>, and I’m exploring <b>C#</b> and <b>Unity</b>
+            for game and app development.
+            I enjoy <b>reading books</b> and <b>solving puzzles</b>, and I love turning ideas into small projects
+            that help me learn new skills.
+        </p>
+
+        <p>
+            <b>Goals / Interests:</b>
+            To become a <b>full-stack web developer</b>, improve my <b>problem-solving skills</b> through DSA, and
+            build engaging apps and games using Unity and C#.
+        </p>
+
+        <p>
+            <b>What makes me unique:</b> a blend of curiosity for <b>competitive problem-solving</b> and <b>hands-on
+                project building</b> — I learn best by creating.
+        </p>
+
+        <br>
+
+        <h3>Skills / Technologies</h3>
+        <p>
+            <b>Languages:</b> Python, C, C++, C# <br>
+            <b>Web:</b> HTML, CSS, JavaScript (learning web development) <br>
+            <b>Tools / Concepts:</b> DSA, Git, basic SQL, Unity (intro level)
+        </p>
+    </section>
+    <section id="project">
+        <h2>My Projects</h2>
+
+        <h3>1. Algorithm Visualizer (Tkinter)</h3>
+        <p>
+            A Python-based GUI that visually demonstrates popular sorting algorithms —
+            <b>Bubble Sort</b>, <b>Merge Sort</b>, and <b>Quick Sort</b>.
+            Built using <b>Tkinter</b> for the interface, it shows how each algorithm works step by step, helping to
+            understand their logic and time behavior visually.
+        </p>
+
+        <h3>2. Simple Text Editor (Python)</h3>
+        <p>
+            A lightweight text editor built with Python that supports <b>Undo</b> and <b>Redo</b> operations using
+            the
+            <b>Stack</b> data structure.
+            Includes basic file operations — <b>New</b>, <b>Open</b>, <b>Save</b>, and <b>Exit</b> — all implemented
+            with Python’s file handling functions.
+        </p>
+
+        <h3>3. Elevator Simulation (Tkinter)</h3>
+        <p>
+            A logical simulation of an elevator system built using <b>Tkinter</b>.
+            It handles <b>floor selection, movement logic,</b> and <b>direction control</b> using Python’s
+            event-driven
+            programming.
+            A fun project showcasing GUI design and logic handling together.
+        </p>
+
+        <h3>4. Portfolio Website (Web Development)</h3>
+        <p>
+            A personal portfolio site created with <b>HTML</b> and <b>CSS</b>, showcasing my projects, skills, and
+            contact information.
+            It’s a simple, responsive website that reflects my growing experience in web development.
+        </p>
+
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <br>
+        <p>Mobile: 7820053045</p>
+        <p>Email: <a href="aryannsainiii@gmail.com">q43676709@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/aryannsainiii-hub/25VA151" target="_blank">Arshh-W</a></p>
+
+    </section>
+
+</body>
+<footer>
+    <p>©2025 ARYAN SAINI | All Rights Reserved</p>
+</footer>
+
+</html>
