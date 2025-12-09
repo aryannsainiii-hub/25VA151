@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    nav {
+      background: black;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: red;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: black;
+        flex-direction: column;
+        width: 150px;
+        padding: 10px;
+      }
+
+      .menu a {
+        padding: 10px;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">RESPONSIVE NAVBAR</div>
+    <div class="menu" id="menu">
+      <a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=580628332551865472&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151661&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1">Home</a>
+      <a href="https://www.amazon.in/deals?ref_=nav_cs_gb">Products</a>
+      <a href="https://www.amazon.in/ref=nav_logo">About</a>
+      <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=508510&ref_=nav_em_cs_help_0_1_1_37">Contact</a>
+    </div>
+  </nav>
+</body>
+</html>
